@@ -1,1 +1,1 @@
-export * from './globals/apiGlobalModels'
+export * from './globals/apiGlobalModels';

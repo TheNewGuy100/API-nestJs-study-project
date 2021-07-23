@@ -1,14 +1,17 @@
 import { ApiError } from '@models';
 import { Injectable } from '@nestjs/common';
 
+const jsdom = require('jsdom');
+
 @Injectable()
 export class AppService {
 
-  async MainPage(): Promise < any | ApiError> {
+  async MainPage(): Promise< any | ApiError> {
     try {
-      return 'olá você caiu na API do pedro, :) estamos trabalhando no momento!';
+      return 'hello';
 
     } catch (error) {
+      console.log(error);
       return new ApiError(500, "operation.fail");
     }
   }
@@ -18,6 +21,7 @@ export class AppService {
       return 'olá você caiu na API do pedro, :) estamos trabalhando no momento!';
       
     } catch (error) {
+      console.log(error);
       return new ApiError(500, "operation.fail");
     }
   }

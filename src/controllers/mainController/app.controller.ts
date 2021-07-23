@@ -9,9 +9,9 @@ export class AppController {
   @Get('/main')
   async index(
     @Req() req,
-    @Res() res): Promise< number | ApiError > {
+    @Res() res): Promise< any | ApiError > {
 
-    const response = this.appService.MainPage();
+    const response = await this.appService.MainPage();
 
     if (response instanceof(ApiError)) {
       return res.status(response.code).send(response);
