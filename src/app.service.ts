@@ -4,6 +4,13 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
 
   async getHello(): Promise < any > {
-    return 'Hello World!';
+
+
+
+    return 'olá você caiu na API do pedro, :) estamos trabalhando no momento!';
+  }
+
+  async infoGetter(): Promise < any > {
+    return 'hey';
   }
 }
