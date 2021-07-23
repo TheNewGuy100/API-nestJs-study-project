@@ -14,6 +14,11 @@ export class AppService {
   }
 
   async infoGetter(): Promise < any > {
-    return 'hey';
+    try {
+      return 'olá você caiu na API do pedro, :) estamos trabalhando no momento!';
+      
+    } catch (error) {
+      return new ApiError(500, "operation.fail");
+    }
   }
 }

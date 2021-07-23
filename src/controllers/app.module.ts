@@ -8,5 +8,6 @@ import {
   imports: [],
   controllers: [AppController],
   providers: [AppService],
+  exports: []
 })
 export class AppModule {}
