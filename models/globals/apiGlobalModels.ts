@@ -1,6 +1,5 @@
 
-
-export class ApiErrorModel {
+export class ApiError {
     code: number;
     description: string;
 

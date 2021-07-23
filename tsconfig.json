@@ -13,7 +13,8 @@
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
-      "@models" : ["src/models"]
+      "@models" : ["models/index"],
+      "@controllers" : ["src/controllers/index"]
     }
   }
 }
